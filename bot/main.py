@@ -52,6 +52,8 @@ async def heal_all(ctx):
         if updatefunc == False:
           users[str(i)]['health'] = 100
           print(users[str(i)]['health'])
+          with open('battle.json', 'w') as f:
+            json.dump(users, f)
   else:
     embed = discord.Embed(title="Permission Denied.", description="You don't have permission to use this command.", color=0xff00f6) 
     await ctx.send(embed=embed)
