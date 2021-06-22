@@ -12,7 +12,6 @@ from discord.ext import commands
 from discord.ext import tasks
 from discord.utils import get
 import os
-import keep_alive
 import random
 from datetime import datetime, time, timedelta
 import asyncio
